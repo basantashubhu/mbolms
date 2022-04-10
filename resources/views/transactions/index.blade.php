@@ -118,6 +118,13 @@
                                         </tr>
                                     @endforelse
                                 </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="4" class="p-2 text-right">Total</td>
+                                        <td class="p-2 text-right">Rs. {{ $transactions->sum('amount') }}</td>
+                                        <td colspan="2"></td>
+                                    </tr>
+                                </tfoot>
                             </table>
                         </div>
                     </div>
